@@ -117,7 +117,11 @@ span{
         border-radius: 1rem;
     }
 }
-
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1000px;
+    }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -148,8 +152,8 @@ span{
         width:  auto;
     }
 
-    .hero-section{
-        height: 300vh;
+    .hero-section {
+        height: 250vh;
         width: 100vw;
     }
 
@@ -238,6 +242,55 @@ span{
         width: 90%
     }
 
+
+}
+@media screen and (max-width: 1030px) {
+    .bg-main h1{
+        font-size: 40px;
+    }
+    .navbar{
+        padding: 10px!important;
+    }
+
+    }
+@media screen and (max-width: 1450px) {
+    .bg-main{
+        height: 115vh;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .bg-main{
+        height: 130vh;
+    }
+    .bg-main h1{
+        font-size: 30px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    .bg-main{
+        height: 140vh;
+    }
+    .bg-main h1{
+        font-size: 25px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .bg-main{
+        height: 160vh;
+    }
+   
+
 }
 
 @media screen and (max-width: 768px) {
@@ -261,10 +314,6 @@ span{
     background: #1089ff;
     border: none;
     outline: none;
-}
-
-.para-width{
-    width: 55ch;
 }
 
 .text-grey{
@@ -334,6 +383,10 @@ button, a{
 @media screen and (max-width: 998px) {
     .carousel .carousel-indicators {
         bottom: -8%;
+    }
+    .item{
+        height: auto;
+        width: auto;
     }
 }
 
@@ -425,23 +478,40 @@ button, a{
     color:white;
 }
 
-.carousel-indicators{
-    bottom: -20%;
-}
-
-.carousel-indicators [data-bs-target]{
-    margin-top: 2rem;
-    border-radius: 50%;
-    width: .7rem;
-    height: .7rem;
-    background-color: var(--bs-primary-color);
-}
 
 
-
-.card:hover,.card:hover img,.card :hover p{
+/* .card:hover img ,p{
     background-color: #262631;
     color: var( --bs-main-color);
     transition: all .2s linear;
-    box-shadow: rgba(2, 2, 2, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
+} */
+
+
+.item:hover .card {
+    background-color: #333; /* Dark background on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .item:hover .card-text,
+  .item:hover .card-title {
+    color: #fff; /* White text on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  @media (max-width:430px) {
+      .cont{
+          padding-left: 14vw;
+      }
+    
+  }
+  @media (max-width:380px) {
+      .cont{
+          padding-left: 10vw;
+      }
+    
+  }
+  @media (max-width:350px) {
+      .cont{
+          padding-left: 1vw;
+      }
+    
+  }
